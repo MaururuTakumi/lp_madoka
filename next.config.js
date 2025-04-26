@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Vercelでのデプロイ用の設定
-  swcMinify: true,
+  // シンプルな設定に戻す
   reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  images: { 
-    unoptimized: process.env.VERCEL_ENV === 'production' ? false : true,
+  swcMinify: true,
+  images: {
     domains: [],
-    remotePatterns: [],
-  },
+  }
 };
 
 module.exports = nextConfig;
