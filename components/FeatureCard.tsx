@@ -1,9 +1,9 @@
-import { DivideIcon as LucideIcon } from 'lucide-react';
+import { DivideIcon as LucideIcon, LucideIcon as LucideIconType } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 interface FeatureCardProps {
-  icon: LucideIcon;
+  icon: typeof LucideIcon;
   title: string;
   description: string;
   index: number;
