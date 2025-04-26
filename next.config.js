@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // output: 'export'設定を削除してVercelで正常にデプロイできるようにする
   eslint: {
     ignoreDuringBuilds: true,
   },
